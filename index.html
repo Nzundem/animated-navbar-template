@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Creative navbar animation</title>
+</head>
+<body>
+    <nav id="overlay">
+        <img src="img/close.svg" alt="clsoe btn" class="close-btn" id="close-menu">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+                <span>Hurry, get back home</span>
+            </li>
+            <li>
+                <a href="#">About</a>
+                <span>Hurry, get back home</span>
+            </li>
+            <li>
+                <a href="#">Services</a>
+                <span>Hurry, get back home</span>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+                <span>Hurry, get back home</span>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <a href="#" class="logo">MySite</a>
+        <img src="img/menu.svg" alt="menu" class="menu-btn" id="open-menu">
+    </header>
+    <section>
+        <h1>this is fancy</h1>
+    </section>
+
+    <script>
+        let overlay = document.querySelector("#overlay");        
+        let closeMenu = document.querySelector("#close-menu");
+
+        document.getElementById('open-menu').addEventListener('click', function(){
+            overlay.classList.add('show-menu');
+        })
+        
+        document.getElementById('close-menu').addEventListener('click', function(){
+            overlay.classList.remove('show-menu');
+        })
+    </script>
+</body>
+</html>
